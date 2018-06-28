@@ -29,8 +29,9 @@ body {
 .card-front {
   background: #fff;
   color: #f1c40f;
+  transform: rotateY(180deg);
 }
 
-.card-front:active {
+.card:active {
   transform: rotateY(180deg);
 }
