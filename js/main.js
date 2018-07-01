@@ -19,6 +19,9 @@
     card = document.createElement('div');
     card.innerHTML = inner;
     card.className = 'card';
+    card.addEventListener('click', function() {
+      card.className = 'card open';
+    });
     container = document.createElement('div');
     container.className = 'card-container';
     container.appendChild(card);
