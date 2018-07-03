@@ -50,7 +50,17 @@
       firstCard = card;
     } else {
       secondCard = card;
+      check();
     }
+  }
+
+  function check() {
+    if (firstCard.children[0].textContent !== secondCard.children[0].textContent) {
+      firstCard.className = 'card';
+      secondCard.className = 'card';
+    }
+    firstCard = null;
+    secondCard = null;
   }
 
   init();
