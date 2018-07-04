@@ -50,7 +50,7 @@
       firstCard = card;
     } else {
       secondCard = card;
-      check();
+      secondCard.addEventListener('transitionend', check);
     }
   }
 
@@ -59,6 +59,7 @@
       firstCard.className = 'card';
       secondCard.className = 'card';
     }
+    secondCard.removeEventListener('transitionend', check);
     firstCard = null;
     secondCard = null;
   }
