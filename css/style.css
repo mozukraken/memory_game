@@ -79,3 +79,10 @@ body {
   margin-top: 15px;
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
 }
+
+#restart.inactive {
+  cursor: default;
+  opacity: .4;
+  box-shadow: none;
+  margin-top: 20px;
+}
